@@ -2,7 +2,8 @@
 
 > A **React Native** library to show images grid in chat messages like your favorite platforms!
 
-[![NPM](https://img.shields.io/npm/v/blah-blah-blah.svg)](https://www.npmjs.com/package/blah-blah-blah)
+[![NPM](https://img.shields.io/npm/v/react-native-chat-images.svg)](https://www.npmjs.com/package/react-native-chat-images)
+[![NPM](https://img.shields.io/github/license/ovi/react-native-chat-images.svg)](https://www.npmjs.com/package/react-native-chat-images)
 
 ## Install
 
