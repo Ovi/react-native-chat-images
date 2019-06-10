@@ -1,0 +1,30 @@
+{
+  "name": "react-native-chat-images",
+  "version": "1.0.0",
+  "description": "A React Native library to show images grid in chat messages like your favorite platforms!",
+  "author": "Ovi <contact@muhammadovi.com>",
+  "main": "src/index.js",
+  "types": "src/components/Images.d.ts",
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react-native-image-zoom-viewer": "^2.2.26"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ovi/react-native-chat-images.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ovi/react-native-chat-images/issues"
+  },
+  "homepage": "https://github.com/Ovi/react-native-chat-images",
+  "license": "MIT",
+  "keywords": [
+    "chat-images",
+    "chat-grid-images",
+    "chat-combine-images",
+    "grid-images",
+    "react-native-chat-images",
+    "react-native-images",
+    "whatsapp-images"
+  ]
+}
