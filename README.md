@@ -1,9 +1,25 @@
 # react-native-chat-images
 
-> A **React Native** library to show images grid in chat messages like your favorite platforms!
+> A **React Native** library to show images grid in chat messages like your favorite platforms! (WhatsApp, Messenger)
 
 [![NPM](https://img.shields.io/npm/v/react-native-chat-images.svg)](https://www.npmjs.com/package/react-native-chat-images)
 [![NPM](https://img.shields.io/github/license/ovi/react-native-chat-images.svg)](https://www.npmjs.com/package/react-native-chat-images)
+
+<p align="center">
+    <img alt="react-native-chat-images" src="preview/sample.gif" width="260" height="510" />
+ </a>
+
+</p>
+
+<h3 align="center">
+  React Native Chat Images
+</h3>
+
+<p align="center">
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=exp://expo.io/@muhammadovi/react-native-chat-images">
+  <br>
+  <a href="https://snack.expo.io/@muhammadovi/react-native-chat-images" target="_blank"><i>demo</i> <small> (expo)</small></a>
+</p>
 
 ## Install
 
@@ -16,10 +32,6 @@ OR
 ```bash
 yarn add react-native-chat-images
 ```
-
-## First View
-
-![Example Code](/preview/sample.gif)
 
 ## Usage
 
