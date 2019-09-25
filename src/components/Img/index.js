@@ -15,10 +15,14 @@ const Img = props => {
       <AsyncImage source={hasMoreData ? getThumbnail(image) : image} />
 
       {hasMoreData && image.caption && !hideCaption && (
-        <Text style={[styles.caption, image.captionStyle]}>{image.caption}</Text>
+        <Text style={[styles.caption, image.captionStyle]}>
+          {image.caption}
+        </Text>
       )}
 
-      {hasMoreData && image.overlay && <View style={styles.overlay}>{image.overlay}</View>}
+      {hasMoreData && image.overlay && (
+        <View style={styles.overlay}>{image.overlay}</View>
+      )}
     </View>
   );
 };

@@ -88,7 +88,9 @@ class ImageList extends Component {
     return (
       <View style={styles.container}>
         {this.renderBackBtn()}
-        <ScrollView ref={view => (this.scrollView = view)}>{this.renderImages()}</ScrollView>
+        <ScrollView ref={view => (this.scrollView = view)}>
+          {this.renderImages()}
+        </ScrollView>
 
         <View style={styles.modalView}>
           <Modal
@@ -98,7 +100,9 @@ class ImageList extends Component {
           >
             <ImageViewer
               index={imgToShow}
-              loadingRender={() => <ActivityIndicator size="small" color="#eee" />}
+              loadingRender={() => (
+                <ActivityIndicator size="small" color="#eee" />
+              )}
               imageUrls={imageUrls}
               saveToLocalByLongPress={saveOnLongPress}
               pageAnimateTime={0}
