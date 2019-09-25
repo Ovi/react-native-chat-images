@@ -1,6 +1,6 @@
 {
   "name": "react-native-chat-images",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React Native library to show images grid in chat messages like your favorite platforms!",
   "author": "Ovi <contact@muhammadovi.com>",
   "main": "src/index.js",

@@ -26,12 +26,16 @@ class Images extends Component {
         <View style={styles.flexRow}>
           {images.map((image, i) => (
             <TouchableOpacity
-              key={`chat-image-${Math.random()}`}
+              key={`chat-image-${i}`}
               onPress={() => this.showImageListModal(!modalVisible, i)}
               activeOpacity={0.8}
               style={styles.flexOne}
             >
-              <Img hideCaption={images.length !== 1} style={styles.flexOne} image={image} />
+              <Img
+                hideCaption={images.length !== 1}
+                style={styles.flexOne}
+                image={image}
+              />
             </TouchableOpacity>
           ))}
         </View>
@@ -52,7 +56,7 @@ class Images extends Component {
         <View style={styles.fourImagesInnerView}>
           {images.map((image, i) => (
             <TouchableOpacity
-              key={`chat-image-${Math.random()}`}
+              key={`chat-image-${i}`}
               onPress={() => this.showImageListModal(!modalVisible, i)}
               activeOpacity={0.8}
               style={styles.flexBasisHalf}
@@ -118,11 +122,20 @@ class Images extends Component {
   };
 
   render() {
-    const { backgroundColor, images, saveOnLongPress, style, title, width } = this.props;
+    const {
+      backgroundColor,
+      images,
+      saveOnLongPress,
+      style,
+      title,
+      width,
+    } = this.props;
     const { activeImageIndex, modalVisible } = this.state;
 
     return (
-      <ScrollView style={[{ backgroundColor: '#fff', flexGrow: 1 }, style, { width }]}>
+      <ScrollView
+        style={[{ backgroundColor: '#fff', flexGrow: 1 }, style, { width }]}
+      >
         {images.length < 4 && this.lessThanFourImages()}
         {images.length === 4 && this.fourImages()}
         {images.length > 4 && this.moreThanFourImages()}

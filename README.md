@@ -16,10 +16,14 @@
 </h3>
 
 <p align="center">
-  <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=exp://expo.io/@muhammadovi/react-native-chat-images">
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=exp://expo.io/@muhammadovi/react-native-chat-images">
   <br>
   <a href="https://snack.expo.io/@muhammadovi/react-native-chat-images" target="_blank"><i>demo</i> <small> (expo)</small></a>
 </p>
+
+## ChangeLog
+
+You can find the complete changelog [on this file](/ChangeLog.md).
 
 ## Install
 
@@ -84,13 +88,18 @@ import Images from 'react-native-chat-images';
 
 export default class App extends Component {
   state = {
-    images: [{ url: 'img_01' }, { url: 'img_02' }, { url: 'img_03' }, { url: '...' }],
+    images: [
+      { url: 'img_01' },
+      { url: 'img_02' },
+      { url: 'img_03' },
+      { url: '...' },
+    ],
   };
 
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <Images images={this.state.imgs} />
+        <Images images={this.state.images} />
       </View>
     );
   }

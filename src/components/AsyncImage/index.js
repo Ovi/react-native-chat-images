@@ -34,8 +34,6 @@ class AsyncImage extends Component {
   }
 }
 
-AsyncImage.defaultProps = {};
-
 AsyncImage.propTypes = { source: PropTypes.string.isRequired };
 
 export default AsyncImage;
